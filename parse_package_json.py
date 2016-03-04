@@ -35,13 +35,16 @@ if len(matches) > 0:
     output.writerow(['Package Name', 'Version', 'License', 'Description'])
 
     for match in matches:
-        packageJson = json.load(open(match))
-        if 'dependencies' in packageJson:
-            print(packageJson['name'] + ' has ' + str(len(packageJson['dependencies'])) + ' dependencies')
-            add_deps(packageJson['dependencies'], match)
-        if ('devDependencies' in packageJson) & (args.dev is True):
-            print(packageJson['name'] + ' has ' + str(len(packageJson['devDependencies'])) + ' devDependencies')
-            add_deps(packageJson['devDependencies'], match)
+        try:
+            packageJson = json.load(open(match))
+            if 'dependencies' in packageJson:
+                print(packageJson['name'] + ' has ' + str(len(packageJson['dependencies'])) + ' dependencies')
+                add_deps(packageJson['dependencies'], match)
+            if ('devDependencies' in packageJson) & (args.dev is True):
+                print(packageJson['name'] + ' has ' + str(len(packageJson['devDependencies'])) + ' devDependencies')
+                add_deps(packageJson['devDependencies'], match)
+        except IOError as e:
+                print 'I/O error({0}): {1} for {2}'.format(e.errno, e.strerror, os.path.abspath(match))
 
 for package in iter(packages):
     output.writerow([package, packages[package]['version'], packages[package]['license'], packages[package]['description']])
