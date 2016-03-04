@@ -1,98 +1,98 @@
-Package Name,Version
-coffee-script,1.9.2,MIT
-less,^2.5.1,Apache-2.0
-gulp-babel,^5.2.1,MIT
-jshint,2.8.0,(MIT AND JSON)
-webpack-dev-server,^1.12.0,MIT
-d3,3.5.5,unknown
-phantomjs,^1.9.18,Apache-2.0
-gulp-karma,0.0.4,MIT
-style-loader,^0.12.3,MIT
-gulp,3.8.11,unknown
-react-mdl,^1.0.3,MIT
-jquery,2.1.4,unknown
-css-loader,^0.16.0,MIT
-@indicee/common,^1.0.0,unknown
-repl,0.1.3,unknown
-@indicee/api-toolkit,^1.1.0,unknown
-reactify,1.1.1,MIT
-qs,^6.0.1,BSD-3-Clause
-node-lessify,0.0.10,MIT
-flux,^2.1.1,BSD-3-Clause
-gulp-replace,0.5.3,MIT
-babel-loader,5.3.2,MIT
-semver,4.3.3,BSD
-commonjs-utils,0.1.1,unknown
-keymirror,^0.1.1,unknown
-esprima-fb,14001.1.0-dev-harmony-fb,unknown
-jsonschema,1.0.1,unknown
-map-stream,0.0.5,MIT
-custom-event-polyfill,0.2.1,unknown
-@indicee/build,^1.0.0,unknown
-numeral,1.5.3,unknown
-gulp-nightwatch-headless,^1.0.4,unknown
-gulp-jscs,3.0.2,MIT
-gulp-symlink,2.1.0,MIT
-through2,^2.0.0,MIT
-gulp-scope-css,0.0.2,MIT
-gulp-changed,^1.3.0,MIT
-gulp-react,^2.0.0,MIT
-md5,^2.0.0,BSD-3-Clause
-es6-promise,2.1.1,MIT
-google-maps,3.1.0,MIT
-@indicee/visualizations,^1.0.0,unknown
-moment,2.10.2,unknown
-json-loader,0.5.1,unknown
-history,1.13.x,MIT
-es6-shim,0.28.1,MIT
-jshint-stylish,1.0.1,MIT
-karma-webpack,^1.7.0,MIT
-mocha,^2.3.3,MIT
-gulp-plumber,0.6.6,unknown
-es6-collections,0.5.1,unknown
-yargs,3.9.1,MIT
-gulp-jshint,1.10.0,unknown
-webpack,1.12.2,MIT
-karma-sourcemap-loader,0.3.4,MIT
-material-design-icons,^2.1.1,CC-BY-4.0
-htmlparser2,^3.8.3,MIT
-url-loader,^0.5.6,MIT
-@indicee/common-ui,^1.0.0,unknown
-@indicee/html-to-react,^0.x,MIT
-object-assign,^4.0.1,MIT
-karma-mocha-reporter,1.0.2,The MIT License (MIT)
-react-addons-test-utils,^0.14.2,BSD-3-Clause
-lodash,^4.0.0,MIT
-gulp-jsdoc,0.1.4,MIT
-vinyl-source-stream,1.1.0,MIT
-rewire,^2.3.4,MIT
-del,^2.0.1,MIT
-rewire-webpack,^1.0.0,unknown
-less-plugin-npm-import,^2.1.0,unknown
-chai-spies,0.6.0,unknown
-chai,1.10.0,MIT
-raw-loader,^0.5.1,unknown
-file-loader,^0.8.4,MIT
-html-entities,^1.1.2,MIT
-gulp-filelist,0.1.1,MIT
-gulp-preprocess,1.2.0,MIT
-babel,^5.6.23,MIT
-react-date-picker,^3.1.8,MIT
-babel-core,5.8.22,MIT
-npm,2.8.4,Artistic-2.0
-karma-junit-reporter,0.2.2,MIT
-glob,4.5.3,ISC
-react,^0.14.2,BSD-3-Clause
-gulp-bump,0.3.0,unknown
-karma-mocha,0.1.10,MIT
-toastr,^2.1.2,unknown
-browserify,8.1.3,MIT
-karma-phantomjs-launcher,0.1.4,MIT
-es5-shim,4.1.1,unknown
-loglevel,1.2.0,unknown
-react-dom,^0.14.2,BSD-3-Clause
-q,^1.4.1,"{u'url': u'http://github.com/kriskowal/q/raw/master/LICENSE', u'type': u'MIT'}"
-react-router,1.0.2,MIT
-karma,0.13.9,MIT
-less-loader,^2.2.0,unknown
-gulp-mocha,2.0.1,MIT
+Package Name,Version,License,Description
+coffee-script,1.9.2,MIT,Unfancy JavaScript
+less,^2.5.1,Apache-2.0,Leaner CSS
+gulp-babel,^5.2.1,MIT,Turn ES6 code into vanilla ES5 with no runtime required
+jshint,2.8.0,(MIT AND JSON),Static analysis tool for JavaScript
+webpack-dev-server,^1.12.0,MIT,Serves a webpack app. Updates the browser on changes.
+d3,3.5.5,unknown,A JavaScript visualization library for HTML and SVG.
+phantomjs,^1.9.18,Apache-2.0,Headless WebKit with JS API
+gulp-karma,0.0.4,MIT,Karma plugin for gulp
+style-loader,^0.12.3,MIT,style loader module for webpack
+gulp,3.8.11,unknown,The streaming build system
+react-mdl,^1.0.3,MIT,React Components wrapper for Material Design Lite UI
+jquery,2.1.4,unknown,JavaScript library for DOM operations
+css-loader,^0.16.0,MIT,css loader module for webpack
+@indicee/common,^1.0.0,unknown,Common utilities for the dashboard-components.
+repl,0.1.3,unknown,A simple fast template libray.
+@indicee/api-toolkit,^1.1.0,unknown,Indicee API toolkit for connecting to Indicee platform
+reactify,1.1.1,MIT,Browserify transform for JSX (a superset of JS used by React.js)
+qs,^6.0.1,BSD-3-Clause,"A querystring parser that supports nesting and arrays, with a depth limit"
+node-lessify,0.0.10,MIT,LESS precompiler and CSS plugin for Browserify
+flux,^2.1.1,BSD-3-Clause,An application architecture based on a unidirectional data flow
+gulp-replace,0.5.3,MIT,A string replace plugin for gulp
+babel-loader,5.3.2,MIT,babel module loader for webpack
+semver,4.3.3,BSD,The semantic version parser used by npm.
+commonjs-utils,0.1.1,unknown,none
+keymirror,^0.1.1,unknown,A simple utility for creating an object with values equal to its keys. Identical to react/lib/keyMirror
+esprima-fb,14001.1.0-dev-harmony-fb,unknown,Facebook-specific fork of the esprima project
+jsonschema,1.0.1,unknown,A fast and easy to use JSON Schema validator
+map-stream,0.0.5,MIT,construct pipes of streams of events
+custom-event-polyfill,0.2.1,unknown,Polyfill for creating CustomEvents on IE9/10/11 if native implementation is missing.
+@indicee/build,^1.0.0,unknown,Build module for core-tools.
+numeral,1.5.3,unknown,Format and manipulate numbers.
+gulp-nightwatch-headless,^1.0.4,unknown,"An almost-zero configuration Gulp plugin to run Selenium, PhantomJS and Nightwatch together in one process."
+gulp-jscs,3.0.2,MIT,Check JavaScript code style with jscs
+gulp-symlink,2.1.0,MIT,Create symlinks during your gulp build.
+through2,^2.0.0,MIT,A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise
+gulp-scope-css,0.0.2,MIT,A plugin for Gulp
+gulp-changed,^1.3.0,MIT,Only pass through changed files
+gulp-react,^2.0.0,MIT,Precompile Facebook React JSX templates into JavaScript
+md5,^2.0.0,BSD-3-Clause,js function for hashing messages with MD5
+es6-promise,2.1.1,MIT,A lightweight library that provides tools for organizing asynchronous code
+google-maps,3.1.0,MIT,Wrapper for asynchronously used Google Maps API
+@indicee/visualizations,^1.0.0,unknown,Provides reusable components for web and core tool applications.
+moment,2.10.2,unknown,"Parse, validate, manipulate, and display dates"
+json-loader,0.5.1,unknown,json loader module for webpack
+history,1.13.x,MIT,"A minimal, functional history implementation for JavaScript"
+es6-shim,0.28.1,MIT,ECMAScript 6 (Harmony) compatibility shims for legacy JavaScript engines
+jshint-stylish,1.0.1,MIT,Stylish reporter for JSHint
+karma-webpack,^1.7.0,MIT,Use webpack with karma
+mocha,^2.3.3,MIT,"simple, flexible, fun test framework"
+gulp-plumber,0.6.6,unknown,Prevent pipe breaking caused by errors from gulp plugins
+es6-collections,0.5.1,unknown,"ES6 Harmony like collections such Map, WeakMap, and Set"
+yargs,3.9.1,MIT,Light-weight option parsing with an argv hash. No optstrings attached.
+gulp-jshint,1.10.0,unknown,JSHint plugin for gulp
+webpack,1.12.2,MIT,"Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff."
+karma-sourcemap-loader,0.3.4,MIT,Karma plugin that locates and loads existing javascript source map files.
+material-design-icons,^2.1.1,CC-BY-4.0,Material Design icons by Google
+htmlparser2,^3.8.3,MIT,Fast & forgiving HTML/XML/RSS parser
+url-loader,^0.5.6,MIT,url loader module for webpack
+@indicee/common-ui,^1.0.0,unknown,Common UI components
+@indicee/html-to-react,^0.x,MIT,A lightweight library that converts raw HTML to a React DOM structure.
+object-assign,^4.0.1,MIT,ES6 Object.assign() ponyfill
+karma-mocha-reporter,1.0.2,The MIT License (MIT),Karma reporter with mocha style logging.
+react-addons-test-utils,^0.14.2,BSD-3-Clause,This package provides the React TestUtils add-on.
+lodash,^4.0.0,MIT,Lodash modular utilities.
+gulp-jsdoc,0.1.4,MIT,A jsdoc plugin for Gulp
+vinyl-source-stream,1.1.0,MIT,Use conventional text streams at the start of your gulp or vinyl pipelines
+rewire,^2.3.4,MIT,Easy dependency injection for node.js unit testing
+del,^2.0.1,MIT,Delete files/folders using globs
+rewire-webpack,^1.0.0,unknown,Dependency injection for webpack bundles
+less-plugin-npm-import,^2.1.0,unknown,npm import plugin for less.js
+chai-spies,0.6.0,unknown,Spies for the Chai assertion library.
+chai,1.10.0,MIT,BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+raw-loader,^0.5.1,unknown,raw loader module for webpack
+file-loader,^0.8.4,MIT,file loader module for webpack
+html-entities,^1.1.2,MIT,Faster HTML entities encode/decode library.
+gulp-filelist,0.1.1,MIT,Convert list of file paths in current stream to a JSON file.
+gulp-preprocess,1.2.0,MIT,"Gulp plugin to preprocess HTML, JavaScript, and other files based on custom context or environment configuration"
+babel,^5.6.23,MIT,Turn ES6 code into readable vanilla ES5 with source maps
+react-date-picker,^3.1.8,MIT,A carefully crafted date picker for React
+babel-core,5.8.22,MIT,A compiler for writing next generation JavaScript
+npm,2.8.4,Artistic-2.0,a package manager for JavaScript
+karma-junit-reporter,0.2.2,MIT,A Karma plugin. Report results in junit xml format.
+glob,4.5.3,ISC,a little globber
+react,^0.14.2,BSD-3-Clause,React is a JavaScript library for building user interfaces.
+gulp-bump,0.3.0,unknown,Bump npm versions with Gulp (gulpjs.com)
+karma-mocha,0.1.10,MIT,A Karma plugin. Adapter for Mocha testing framework.
+toastr,^2.1.2,unknown,ToastrJS is a JavaScript library for Gnome / Growl type non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
+browserify,8.1.3,MIT,browser-side require() the node way
+karma-phantomjs-launcher,0.1.4,MIT,A Karma plugin. Launcher for PhantomJS.
+es5-shim,4.1.1,unknown,ECMAScript 5 compatibility shims for legacy JavaScript engines
+loglevel,1.2.0,unknown,"Minimal lightweight logging for JavaScript, adding reliable log level methods to any available console.log methods"
+react-dom,^0.14.2,BSD-3-Clause,React package for working with the DOM.
+q,^1.4.1,"{u'url': u'http://github.com/kriskowal/q/raw/master/LICENSE', u'type': u'MIT'}","A library for promises (CommonJS/Promises/A,B,D)"
+react-router,1.0.2,MIT,A complete routing library for React.js
+karma,0.13.9,MIT,Spectacular Test Runner for JavaScript.
+less-loader,^2.2.0,unknown,less loader module for webpack
+gulp-mocha,2.0.1,MIT,Run Mocha tests
