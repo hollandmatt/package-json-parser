@@ -11,9 +11,9 @@ A script to fetch information on the dependencies of your JavaScript projects an
 
 - `source folder` - Root folder to look for package.json files in. This is recursive, but ignores your dependencies (i.e. the contents of `node_modules`)
 - `output file` - Where to write the results to
-- `--dev` - Add this to include devDependencies
+- `--dev` - (Optional) Add this to include devDependencies
 
-Both are mandatory.
+Use `./parse_package_json.py --help` to see this on the command line.
 
 ## Output
 
