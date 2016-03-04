@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 
-import csv, json, fnmatch, os
-from sys import argv
+import csv, json, fnmatch, os, argparse
 
-script, rootFolder, outputFile, options = argv
+parser = argparse.ArgumentParser(description='Parse information from package.json.')
+parser.add_argument('rootFolder', help='Root folder to look for package info in')
+parser.add_argument('outputFile', help='Path (filename) to write the information to')
+parser.add_argument('--dev', nargs='?', dest='dev', const=True, default=False, help='include devDependencies')
+
+args = parser.parse_args()
 
 excludes = ['node_modules']
 matches = []
-for root, dirnames, filenames in os.walk(rootFolder, topdown=True):
+for root, dirnames, filenames in os.walk(args.rootFolder, topdown=True):
     dirnames[:] = [d for d in dirnames if d not in excludes]
     for filename in fnmatch.filter(filenames, 'package.json'):
         matches.append(os.path.join(root, filename))
@@ -27,7 +31,7 @@ def add_deps(deps, f):
         }
 
 if len(matches) > 0:
-    output = csv.writer(open(outputFile, 'wb'))
+    output = csv.writer(open(args.outputFile, 'wb'))
     output.writerow(['Package Name', 'Version', 'License', 'Description'])
 
     for match in matches:
@@ -35,7 +39,7 @@ if len(matches) > 0:
         if 'dependencies' in packageJson:
             print(packageJson['name'] + ' has ' + str(len(packageJson['dependencies'])) + ' dependencies')
             add_deps(packageJson['dependencies'], match)
-        if ('devDependencies' in packageJson) & ('dev' in options):
+        if ('devDependencies' in packageJson) & (args.dev is True):
             print(packageJson['name'] + ' has ' + str(len(packageJson['devDependencies'])) + ' devDependencies')
             add_deps(packageJson['devDependencies'], match)
 
