@@ -1,0 +1,6 @@
+{
+  "name": "Package-json-parser",
+  "tagline": "Scripts to parse data from package.json files",
+  "body": "A script to parse information on your dependencies from package.json files and write it to CSV.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
